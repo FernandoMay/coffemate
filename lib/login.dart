@@ -5,7 +5,7 @@ import 'package:coffemate/register.dart';
 import 'package:flutter/cupertino.dart';
 
 class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
+  const Login({super.key});
 
   @override
   _LoginState createState() => _LoginState();

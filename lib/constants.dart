@@ -116,5 +116,5 @@ void showCupertinoSnackBar({
     Duration(milliseconds: durationMillis),
     overlayEntry.remove,
   );
-  Overlay.of(Navigator.of(context).context)?.insert(overlayEntry);
+  Overlay.of(Navigator.of(context).context).insert(overlayEntry);
 }

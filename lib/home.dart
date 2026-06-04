@@ -5,7 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 
 class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({super.key});
 
   @override
   _HomeState createState() => _HomeState();
@@ -245,7 +245,7 @@ class _HomeState extends State<Home> {
 }
 
 class CoffeItem extends StatelessWidget {
-  const CoffeItem(this.coffe, this.reference, {Key? key}) : super(key: key);
+  const CoffeItem(this.coffe, this.reference, {super.key});
 
   final Coffe coffe;
   final DocumentReference<Coffe> reference;
