@@ -7,6 +7,7 @@ class Register extends StatefulWidget {
   const Register({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _RegisterState createState() => _RegisterState();
 }
 
@@ -189,6 +190,7 @@ class _RegisterState extends State<Register> {
                     onPressed: () async {
                       String op = await auth.signUpUser(
                           email: email, password: pass, name: name);
+                      if (!context.mounted) return;
                       op == "success"
                           ? Navigator.push(
                               context,

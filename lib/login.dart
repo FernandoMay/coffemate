@@ -8,6 +8,7 @@ class Login extends StatefulWidget {
   const Login({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _LoginState createState() => _LoginState();
 }
 
@@ -160,6 +161,7 @@ class _LoginState extends State<Login> {
                     onPressed: () async {
                       String op =
                           await auth.signInUser(email: email, password: pass);
+                      if (!context.mounted) return;
                       op == "success"
                           ? Navigator.push(
                               context,

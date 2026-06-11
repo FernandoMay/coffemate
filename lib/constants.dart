@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
+const brandColor = Color(0xFF795548);
 const primaryColor = Color(0xFF3C2317);
 const secondaryColor = Color(0xFF628E90);
 const bgLightColor = Color(0xFFF5EFE6);
@@ -105,7 +106,7 @@ void showCupertinoSnackBar({
           ),
           child: Text(
             message,
-            style: CupertinoTheme.of(context).textTheme.actionTextStyle,
+            style: const TextStyle(color: Color(0xFF0F0F0F), fontSize: 14),
             textAlign: TextAlign.center,
           ),
         ),

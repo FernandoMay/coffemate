@@ -8,6 +8,7 @@ class Home extends StatefulWidget {
   const Home({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _HomeState createState() => _HomeState();
 }
 
@@ -189,7 +190,7 @@ class _HomeState extends State<Home> {
               child: Text(
                 "Tu compañero de café",
                 style:
-                    CupertinoTheme.of(context).textTheme.navLargeTitleTextStyle,
+                    const TextStyle(fontSize: 34, fontWeight: FontWeight.w700),
               ),
             ),
             //previousPageTitle: "Back",
@@ -240,7 +241,7 @@ class _HomeState extends State<Home> {
     coffeRef
         .doc(_email)
         .set(mycoffee)
-        .onError((e, _) => print("Error writing document: $e"));
+        .onError((e, _) => debugPrint("Error writing document: $e"));
   }
 }
 
@@ -269,7 +270,7 @@ class CoffeItem extends StatelessWidget {
                   height: heighty * 1.2,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(48.0),
-                    color: brownDark.withOpacity(1 / coffe.coffee),
+                    color: brownDark.withValues(alpha: 1 / coffe.coffee),
                   ),
                   child: Positioned(
                       right: 24,

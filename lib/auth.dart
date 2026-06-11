@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:flutter/foundation.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:coffemate/models.dart';
@@ -59,7 +60,7 @@ class Auth {
           FirebaseFirestore.instance
               .doc(email)
               .set(coff.toJson())
-              .onError((e, _) => print("Error writing document: $e"));
+              .onError((e, _) => debugPrint("Error writing document: $e"));
           output = "success";
         } on FirebaseAuthException catch (e) {
           output = e.message.toString();
