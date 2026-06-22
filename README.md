@@ -1,24 +1,16 @@
-# CoffeMate ☕
+# coffemate
 
-A Flutter coffee shop app with Firebase authentication and Firestore data storage.
+A new Flutter project.
 
-## Brand
+## Getting Started
 
-- **Primary Color**: Brown (#795548)
-- **Style**: Material Design 3
+This project is a starting point for a Flutter application.
 
-## Stack
+A few resources to get you started if this is your first Flutter project:
 
-- **Flutter** — Cross-platform mobile framework
-- **Firebase Auth** — User authentication
-- **Cloud Firestore** — NoSQL data storage
-- **Material Design 3** — Modern UI with dynamic theming
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-## Quick Start
-
-```bash
-flutter pub get
-flutter run
-```
-
-Requires Firebase project configuration.
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
